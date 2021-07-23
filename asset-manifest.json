@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/process-scheduler-simulator/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/process-scheduler-simulator/static/js/main.eebb0ca7.chunk.js",
-    "main.js.map": "/process-scheduler-simulator/static/js/main.eebb0ca7.chunk.js.map",
-    "runtime-main.js": "/process-scheduler-simulator/static/js/runtime-main.073fc708.js",
-    "runtime-main.js.map": "/process-scheduler-simulator/static/js/runtime-main.073fc708.js.map",
-    "static/js/2.bb2b8fe6.chunk.js": "/process-scheduler-simulator/static/js/2.bb2b8fe6.chunk.js",
-    "static/js/2.bb2b8fe6.chunk.js.map": "/process-scheduler-simulator/static/js/2.bb2b8fe6.chunk.js.map",
-    "static/js/3.257859aa.chunk.js": "/process-scheduler-simulator/static/js/3.257859aa.chunk.js",
-    "static/js/3.257859aa.chunk.js.map": "/process-scheduler-simulator/static/js/3.257859aa.chunk.js.map",
+    "main.js": "/process-scheduler-simulator/static/js/main.9dcc61ed.chunk.js",
+    "main.js.map": "/process-scheduler-simulator/static/js/main.9dcc61ed.chunk.js.map",
+    "runtime-main.js": "/process-scheduler-simulator/static/js/runtime-main.0bd0936c.js",
+    "runtime-main.js.map": "/process-scheduler-simulator/static/js/runtime-main.0bd0936c.js.map",
+    "static/js/2.8294909c.chunk.js": "/process-scheduler-simulator/static/js/2.8294909c.chunk.js",
+    "static/js/2.8294909c.chunk.js.map": "/process-scheduler-simulator/static/js/2.8294909c.chunk.js.map",
+    "static/js/3.c77b4a81.chunk.js": "/process-scheduler-simulator/static/js/3.c77b4a81.chunk.js",
+    "static/js/3.c77b4a81.chunk.js.map": "/process-scheduler-simulator/static/js/3.c77b4a81.chunk.js.map",
     "index.html": "/process-scheduler-simulator/index.html",
     "static/css/main.8c8b27cf.chunk.css.map": "/process-scheduler-simulator/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.bb2b8fe6.chunk.js.LICENSE.txt": "/process-scheduler-simulator/static/js/2.bb2b8fe6.chunk.js.LICENSE.txt",
+    "static/js/2.8294909c.chunk.js.LICENSE.txt": "/process-scheduler-simulator/static/js/2.8294909c.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/process-scheduler-simulator/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.073fc708.js",
-    "static/js/2.bb2b8fe6.chunk.js",
+    "static/js/runtime-main.0bd0936c.js",
+    "static/js/2.8294909c.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.eebb0ca7.chunk.js"
+    "static/js/main.9dcc61ed.chunk.js"
   ]
 }

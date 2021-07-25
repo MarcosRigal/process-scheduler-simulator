@@ -7,6 +7,46 @@
   pointer-events: none;
 }
 
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #5bcc55;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -25,7 +65,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #95ff61;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +75,109 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #5bcc55;
+  color: white;
+  padding: 16px;
+  font-size: 30px;
+  min-width: 160px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  font-size: 30px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.LoggingButton {
+  background-color: #5bcc55;
+  color: white;
+  padding: 16px;
+  font-size: 30px;
+  min-width: 160px;
+  border: none;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.tableBody {
+  border: 1px solid white;
+}
+
+.th {
+  border: 1px solid white;
+  font-size: 19px;
+  min-width: 105px;
+  padding: 1px;
+}
+.thh {
+  border: 1px solid white;
+  min-width: 30px;
+}
+.td {
+  border: 1px solid white;
+}
+.minusButton{
+  background-color: #282c34;
+  border: none;
+  color: red;
+  font-size: 25px;
+  text-align: center;
+}
+.minusButton:hover{
+  color: rgb(165, 1, 1)
+}
+.plusButton{
+  background-color: #282c34;
+  border: none;
+  color: #5bcc55;
+  font-size: 25px;
+  text-align: center;
+}
+.plusButton:hover{
+  color: #3e8e41;
 }

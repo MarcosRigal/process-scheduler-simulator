@@ -1,27 +1,44 @@
 import './App.css';
 import React from 'react';
-import logo from './logo.svg';
+import logo from "./assets/favicon.ico";
+import uco from "./assets/uco.png";
+import epsc from "./assets/epsc.png";
+import { Route, Switch, Link } from "react-router-dom";
+import About from "./About";
 
 class Home extends React.Component {
     render() {
         return (
             <div className="App">
-                <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-                </header>
-            </div>
-            
+            <header className="App-header">
+              <div id="banner">
+                <div class="inline-block">
+                  <a href="https://www.uco.es/">
+                    <img src={uco} alt="uco" />
+                  </a>
+                </div>
+                <div class="inline-block">
+                  <a href="https://www.uco.es/eps/es/">
+                    <img src={epsc} alt="epsc" />
+                  </a>
+                </div>
+              </div>
+              <h1>Process Planner Simulator</h1>
+              <img src={logo} alt="logo" height="128" />
+              <br></br>
+              <Link to="/about" class="button">Iniciar</Link>
+      
+              <p>By: Marcos Rivera Gavilán</p>
+              <a
+                className="App-link"
+                href="https://github.com/MarcosRigal/Pps"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://github.com/MarcosRigal/Pps
+              </a>
+            </header>
+          </div>            
         );
     }
 

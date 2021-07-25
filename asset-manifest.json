@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/process-scheduler-simulator/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/process-scheduler-simulator/static/js/main.9dcc61ed.chunk.js",
-    "main.js.map": "/process-scheduler-simulator/static/js/main.9dcc61ed.chunk.js.map",
-    "runtime-main.js": "/process-scheduler-simulator/static/js/runtime-main.0bd0936c.js",
-    "runtime-main.js.map": "/process-scheduler-simulator/static/js/runtime-main.0bd0936c.js.map",
-    "static/js/2.8294909c.chunk.js": "/process-scheduler-simulator/static/js/2.8294909c.chunk.js",
-    "static/js/2.8294909c.chunk.js.map": "/process-scheduler-simulator/static/js/2.8294909c.chunk.js.map",
-    "static/js/3.c77b4a81.chunk.js": "/process-scheduler-simulator/static/js/3.c77b4a81.chunk.js",
-    "static/js/3.c77b4a81.chunk.js.map": "/process-scheduler-simulator/static/js/3.c77b4a81.chunk.js.map",
+    "main.css": "/process-scheduler-simulator/static/css/main.21be9b1d.chunk.css",
+    "main.js": "/process-scheduler-simulator/static/js/main.f036c79d.chunk.js",
+    "main.js.map": "/process-scheduler-simulator/static/js/main.f036c79d.chunk.js.map",
+    "runtime-main.js": "/process-scheduler-simulator/static/js/runtime-main.80c3c448.js",
+    "runtime-main.js.map": "/process-scheduler-simulator/static/js/runtime-main.80c3c448.js.map",
+    "static/js/2.8c562381.chunk.js": "/process-scheduler-simulator/static/js/2.8c562381.chunk.js",
+    "static/js/2.8c562381.chunk.js.map": "/process-scheduler-simulator/static/js/2.8c562381.chunk.js.map",
+    "static/js/3.204e29a9.chunk.js": "/process-scheduler-simulator/static/js/3.204e29a9.chunk.js",
+    "static/js/3.204e29a9.chunk.js.map": "/process-scheduler-simulator/static/js/3.204e29a9.chunk.js.map",
     "index.html": "/process-scheduler-simulator/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/process-scheduler-simulator/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.8294909c.chunk.js.LICENSE.txt": "/process-scheduler-simulator/static/js/2.8294909c.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/process-scheduler-simulator/static/media/logo.6ce24c58.svg"
+    "static/css/main.21be9b1d.chunk.css.map": "/process-scheduler-simulator/static/css/main.21be9b1d.chunk.css.map",
+    "static/js/2.8c562381.chunk.js.LICENSE.txt": "/process-scheduler-simulator/static/js/2.8c562381.chunk.js.LICENSE.txt",
+    "static/media/epsc.1163ee64.png": "/process-scheduler-simulator/static/media/epsc.1163ee64.png",
+    "static/media/favicon.29bf6954.ico": "/process-scheduler-simulator/static/media/favicon.29bf6954.ico",
+    "static/media/uco.447057b6.png": "/process-scheduler-simulator/static/media/uco.447057b6.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0bd0936c.js",
-    "static/js/2.8294909c.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.9dcc61ed.chunk.js"
+    "static/js/runtime-main.80c3c448.js",
+    "static/js/2.8c562381.chunk.js",
+    "static/css/main.21be9b1d.chunk.css",
+    "static/js/main.f036c79d.chunk.js"
   ]
 }

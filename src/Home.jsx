@@ -12,7 +12,7 @@ class Home extends React.Component {
       <div className="App">
         <header className="App-header">
           <Helmet>
-            <title>Process Planner Simulator</title>
+            <title>Process Scheduler Simulator</title>
           </Helmet>
           <div id="banner">
             <div class="inline-block">
@@ -26,7 +26,7 @@ class Home extends React.Component {
               </a>
             </div>
           </div>
-          <h1>Process Planner Simulator</h1>
+          <h1>Process Scheduler Simulator</h1>
           <img src={logo} alt="logo" height="128" />
           <br></br>
           <Link to="/fcfs">
@@ -38,11 +38,11 @@ class Home extends React.Component {
           <p>By: Marcos Rivera Gavilán</p>
           <a
             className="App-link"
-            href="https://github.com/MarcosRigal/Pps"
+            href="https://github.com/MarcosRigal/process-scheduler-simulator"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://github.com/MarcosRigal/Pps
+            https://github.com/MarcosRigal/process-scheduler-simulator
           </a>
         </header>
       </div>

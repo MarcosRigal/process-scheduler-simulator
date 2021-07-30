@@ -1,7 +1,12 @@
 import "./App.css";
 import React from "react";
-import { Route, Switch, Link } from "react-router-dom";
-import About from "./About";
+import { Route, Switch } from "react-router-dom";
+import Fcfs from "./fcfs";
+import Fmpq from "./fmpq";
+import Mpq from "./mpq";
+import Rr from "./rr";
+import Spn from "./spn";
+import Srt from "./srt";
 import Home from "./Home";
 
 class App extends React.Component {
@@ -9,26 +14,28 @@ class App extends React.Component {
     return (
       <div className="App">
         <div>
-          <nav>
-            <ul id="navigation">
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
-              </li>
-            </ul>
-          </nav>
         </div>
         <Switch>
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/about">
-            <About />
+          <Route path="/fcfs">
+            <Fcfs />
+          </Route>
+          <Route path="/fmpq">
+            <Fmpq />
+          </Route>
+          <Route path="/mpq">
+            <Mpq />
+          </Route>
+          <Route path="/rr">
+            <Rr />
+          </Route>
+          <Route path="/spn">
+            <Spn />
+          </Route>
+          <Route path="/srt">
+            <Srt />
           </Route>
         </Switch>
       </div>

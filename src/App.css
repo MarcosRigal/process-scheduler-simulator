@@ -181,3 +181,8 @@
 .plusButton:hover{
   color: #3e8e41;
 }
+
+.space{
+  margin: 0px;
+  padding: 0px;
+}

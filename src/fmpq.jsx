@@ -1,27 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
 
 const FMPQ = () => {
   useEffect(() => {
     document.title = "FMPQ";
   });
-  const [AL, setAL] = useState(0);
-  const [BL, setBL] = useState(0);
-  const [CL, setCL] = useState(0);
-  const [DL, setDL] = useState(0);
-  const [EL, setEL] = useState(0);
-  const [AT, setAT] = useState(0);
-  const [BT, setBT] = useState(0);
-  const [CT, setCT] = useState(0);
-  const [DT, setDT] = useState(0);
-  const [ET, setET] = useState(0);
+  const [AL, setAL] = useState(1);
+  const [BL, setBL] = useState(1);
+  const [CL, setCL] = useState(1);
+  const [DL, setDL] = useState(1);
+  const [EL, setEL] = useState(1);
+  const [AT, setAT] = useState(1);
+  const [BT, setBT] = useState(1);
+  const [CT, setCT] = useState(1);
+  const [DT, setDT] = useState(1);
+  const [ET, setET] = useState(1);
   return (
     <div className="App">
       <header className="App-header">
-        <Helmet>
-          <title>Process Planner Simulator</title>
-        </Helmet>
         <div id="banner">
           <div class="inline-block">
             <div class="dropdown">
@@ -73,24 +69,30 @@ const FMPQ = () => {
               <td class="td">
                 <button
                   class="minusButton"
-                  onClick={() => setAL(AL > 0 ? AL - 1 : AL)}
+                  onClick={() => setAL(AL > 1 ? AL - 1 : AL)}
                 >
                   -
                 </button>
                 &nbsp;{AL}&nbsp;
-                <button class="plusButton" onClick={() => setAL(AL + 1)}>
+                <button
+                  class="plusButton"
+                  onClick={() => setAL(AL > 18 ? AL : AL + 1)}
+                >
                   +
                 </button>
               </td>
               <td class="td">
                 <button
                   class="minusButton"
-                  onClick={() => setAT(AT > 0 ? AT - 1 : AT)}
+                  onClick={() => setAT(AT > 1 ? AT - 1 : AT)}
                 >
                   -
                 </button>
                 &nbsp;{AT}&nbsp;
-                <button class="plusButton" onClick={() => setAT(AT + 1)}>
+                <button
+                  class="plusButton"
+                  onClick={() => setAT(AT > 18 ? AT : AT + 1)}
+                >
                   +
                 </button>
               </td>
@@ -104,24 +106,30 @@ const FMPQ = () => {
               <td class="td">
                 <button
                   class="minusButton"
-                  onClick={() => setBL(BL > 0 ? BL - 1 : BL)}
+                  onClick={() => setBL(BL > 1 ? BL - 1 : BL)}
                 >
                   -
                 </button>
                 &nbsp;{BL}&nbsp;
-                <button class="plusButton" onClick={() => setBL(BL + 1)}>
+                <button
+                  class="plusButton"
+                  onClick={() => setBL(BL > 18 ? BL : BL + 1)}
+                >
                   +
                 </button>
               </td>
               <td class="td">
                 <button
                   class="minusButton"
-                  onClick={() => setBT(BT > 0 ? BT - 1 : BT)}
+                  onClick={() => setBT(BT > 1 ? BT - 1 : BT)}
                 >
                   -
                 </button>
                 &nbsp;{BT}&nbsp;
-                <button class="plusButton" onClick={() => setBT(BT + 1)}>
+                <button
+                  class="plusButton"
+                  onClick={() => setBT(BT > 18 ? BT : BT + 1)}
+                >
                   +
                 </button>
               </td>
@@ -135,24 +143,30 @@ const FMPQ = () => {
               <td class="td">
                 <button
                   class="minusButton"
-                  onClick={() => setCL(CL > 0 ? CL - 1 : CL)}
+                  onClick={() => setCL(CL > 1 ? CL - 1 : CL)}
                 >
                   -
                 </button>
                 &nbsp;{CL}&nbsp;
-                <button class="plusButton" onClick={() => setCL(CL + 1)}>
+                <button
+                  class="plusButton"
+                  onClick={() => setCL(CL > 18 ? CL : CL + 1)}
+                >
                   +
                 </button>
               </td>
               <td class="td">
                 <button
                   class="minusButton"
-                  onClick={() => setCT(CT > 0 ? CT - 1 : CT)}
+                  onClick={() => setCT(CT > 1 ? CT - 1 : CT)}
                 >
                   -
                 </button>
                 &nbsp;{CT}&nbsp;
-                <button class="plusButton" onClick={() => setCT(CT + 1)}>
+                <button
+                  class="plusButton"
+                  onClick={() => setCT(CT > 18 ? CT : CT + 1)}
+                >
                   +
                 </button>
               </td>
@@ -166,24 +180,30 @@ const FMPQ = () => {
               <td class="td">
                 <button
                   class="minusButton"
-                  onClick={() => setDL(DL > 0 ? DL - 1 : DL)}
+                  onClick={() => setDL(DL > 1 ? DL - 1 : DL)}
                 >
                   -
                 </button>
                 &nbsp;{DL}&nbsp;
-                <button class="plusButton" onClick={() => setDL(DL + 1)}>
+                <button
+                  class="plusButton"
+                  onClick={() => setDL(DL > 18 ? DL : DL + 1)}
+                >
                   +
                 </button>
               </td>
               <td class="td">
                 <button
                   class="minusButton"
-                  onClick={() => setDT(DT > 0 ? DT - 1 : DT)}
+                  onClick={() => setDT(DT > 1 ? DT - 1 : DT)}
                 >
                   -
                 </button>
                 &nbsp;{DT}&nbsp;
-                <button class="plusButton" onClick={() => setDT(DT + 1)}>
+                <button
+                  class="plusButton"
+                  onClick={() => setDT(DT > 18 ? DT : DT + 1)}
+                >
                   +
                 </button>
               </td>
@@ -197,24 +217,30 @@ const FMPQ = () => {
               <td class="td">
                 <button
                   class="minusButton"
-                  onClick={() => setEL(EL > 0 ? EL - 1 : EL)}
+                  onClick={() => setEL(EL > 1 ? EL - 1 : EL)}
                 >
                   -
                 </button>
                 &nbsp;{EL}&nbsp;
-                <button class="plusButton" onClick={() => setEL(EL + 1)}>
+                <button
+                  class="plusButton"
+                  onClick={() => setEL(EL > 18 ? EL : EL + 1)}
+                >
                   +
                 </button>
               </td>
               <td class="td">
                 <button
                   class="minusButton"
-                  onClick={() => setET(ET > 0 ? ET - 1 : ET)}
+                  onClick={() => setET(ET > 1 ? ET - 1 : ET)}
                 >
                   -
                 </button>
                 &nbsp;{ET}&nbsp;
-                <button class="plusButton" onClick={() => setET(ET + 1)}>
+                <button
+                  class="plusButton"
+                  onClick={() => setET(ET > 18 ? ET : ET + 1)}
+                >
                   +
                 </button>
               </td>

@@ -1,28 +1,44 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import Dialog from "@material-ui/core/Dialog";
+import DialogContentText from "@material-ui/core/DialogContentText";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogContent from "@material-ui/core/DialogContent";
+import Button from "@material-ui/core/Button";
+import checkInput from "./functions.jsx";
 
 const FCFS = () => {
   useEffect(() => {
     document.title = "FCFS";
   });
-  const [AL, setAL] = useState(0);
-  const [BL, setBL] = useState(0);
-  const [CL, setCL] = useState(0);
-  const [DL, setDL] = useState(0);
-  const [EL, setEL] = useState(0);
-  const [AT, setAT] = useState(0);
-  const [BT, setBT] = useState(0);
-  const [CT, setCT] = useState(0);
-  const [DT, setDT] = useState(0);
-  const [ET, setET] = useState(0);
-  const [SUMA, setSUMA] = useState(0);
+  const [AL, setAL] = useState(1);
+  const [BL, setBL] = useState(1);
+  const [CL, setCL] = useState(1);
+  const [DL, setDL] = useState(1);
+  const [EL, setEL] = useState(1);
+  const [AT, setAT] = useState(1);
+  const [BT, setBT] = useState(1);
+  const [CT, setCT] = useState(1);
+  const [DT, setDT] = useState(1);
+  const [ET, setET] = useState(1);
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickToOpen = () => {
+    setOpen(true);
+  };
+
+  const handleToClose = () => {
+    setOpen(false);
+  };
+
+  const algorithm = () => {
+    setET(10);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <Helmet>
-          <title>Process Planner Simulator</title>
-        </Helmet>
         <div id="banner">
           <div></div>
           <div class="inline-block">
@@ -55,12 +71,48 @@ const FCFS = () => {
             <div class="inline-block">
               <h1>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <button
-                  class="dropbtn"
-                  onClick={() => setSUMA(AL + BL + CL + DL + EL)}
-                >
-                  Play
-                </button>{" "}
+                <div class="dropdown">
+                  <Button
+                    class="dropbtn"
+                    onClick={
+                      checkInput(AL, BL, CL, DL, EL, AT, BT, CT, DT, ET)
+                        ? algorithm
+                        : handleClickToOpen
+                    }
+                  >
+                    Play
+                  </Button>
+                </div>
+                <Dialog open={open} onClose={handleToClose}>
+                  <DialogTitle style={{ background: "#282c34", color: "red" }}>
+                    <b>&#9888;&nbsp;&nbsp;ERROR</b>
+                  </DialogTitle>
+                  <DialogContent
+                    style={{ background: "#282c34", color: "red" }}
+                  >
+                    <DialogContentText
+                      style={{ background: "#282c34", color: "red" }}
+                    >
+                      Los valores introducidos no permiten obtener una solución.
+                      <br></br>Revise que la entrada cumple los siguientes
+                      requisitos:<br></br>
+                      <br></br>&nbsp;&nbsp;&nbsp;&nbsp;-<br></br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;-<br></br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;-
+                    </DialogContentText>
+                  </DialogContent>
+                  <DialogActions
+                    style={{ background: "#282c34", color: "red" }}
+                  >
+                    <Button
+                      onClick={handleToClose}
+                      style={{ color: "red" }}
+                      autoFocus
+                    >
+                      <b>Close</b>
+                    </Button>
+                  </DialogActions>
+                </Dialog>
               </h1>
             </div>
           </div>
@@ -81,24 +133,30 @@ const FCFS = () => {
               <td class="td">
                 <button
                   class="minusButton"
-                  onClick={() => setAL(AL > 0 ? AL - 1 : AL)}
+                  onClick={() => setAL(AL > 1 ? AL - 1 : AL)}
                 >
                   -
                 </button>
                 &nbsp;{AL}&nbsp;
-                <button class="plusButton" onClick={() => setAL(AL + 1)}>
+                <button
+                  class="plusButton"
+                  onClick={() => setAL(AL > 18 ? AL : AL + 1)}
+                >
                   +
                 </button>
               </td>
               <td class="td">
                 <button
                   class="minusButton"
-                  onClick={() => setAT(AT > 0 ? AT - 1 : AT)}
+                  onClick={() => setAT(AT > 1 ? AT - 1 : AT)}
                 >
                   -
                 </button>
                 &nbsp;{AT}&nbsp;
-                <button class="plusButton" onClick={() => setAT(AT + 1)}>
+                <button
+                  class="plusButton"
+                  onClick={() => setAT(AT > 18 ? AT : AT + 1)}
+                >
                   +
                 </button>
               </td>
@@ -112,24 +170,30 @@ const FCFS = () => {
               <td class="td">
                 <button
                   class="minusButton"
-                  onClick={() => setBL(BL > 0 ? BL - 1 : BL)}
+                  onClick={() => setBL(BL > 1 ? BL - 1 : BL)}
                 >
                   -
                 </button>
                 &nbsp;{BL}&nbsp;
-                <button class="plusButton" onClick={() => setBL(BL + 1)}>
+                <button
+                  class="plusButton"
+                  onClick={() => setBL(BL > 18 ? BL : BL + 1)}
+                >
                   +
                 </button>
               </td>
               <td class="td">
                 <button
                   class="minusButton"
-                  onClick={() => setBT(BT > 0 ? BT - 1 : BT)}
+                  onClick={() => setBT(BT > 1 ? BT - 1 : BT)}
                 >
                   -
                 </button>
                 &nbsp;{BT}&nbsp;
-                <button class="plusButton" onClick={() => setBT(BT + 1)}>
+                <button
+                  class="plusButton"
+                  onClick={() => setBT(BT > 18 ? BT : BT + 1)}
+                >
                   +
                 </button>
               </td>
@@ -143,24 +207,30 @@ const FCFS = () => {
               <td class="td">
                 <button
                   class="minusButton"
-                  onClick={() => setCL(CL > 0 ? CL - 1 : CL)}
+                  onClick={() => setCL(CL > 1 ? CL - 1 : CL)}
                 >
                   -
                 </button>
                 &nbsp;{CL}&nbsp;
-                <button class="plusButton" onClick={() => setCL(CL + 1)}>
+                <button
+                  class="plusButton"
+                  onClick={() => setCL(CL > 18 ? CL : CL + 1)}
+                >
                   +
                 </button>
               </td>
               <td class="td">
                 <button
                   class="minusButton"
-                  onClick={() => setCT(CT > 0 ? CT - 1 : CT)}
+                  onClick={() => setCT(CT > 1 ? CT - 1 : CT)}
                 >
                   -
                 </button>
                 &nbsp;{CT}&nbsp;
-                <button class="plusButton" onClick={() => setCT(CT + 1)}>
+                <button
+                  class="plusButton"
+                  onClick={() => setCT(CT > 18 ? CT : CT + 1)}
+                >
                   +
                 </button>
               </td>
@@ -174,24 +244,30 @@ const FCFS = () => {
               <td class="td">
                 <button
                   class="minusButton"
-                  onClick={() => setDL(DL > 0 ? DL - 1 : DL)}
+                  onClick={() => setDL(DL > 1 ? DL - 1 : DL)}
                 >
                   -
                 </button>
                 &nbsp;{DL}&nbsp;
-                <button class="plusButton" onClick={() => setDL(DL + 1)}>
+                <button
+                  class="plusButton"
+                  onClick={() => setDL(DL > 18 ? DL : DL + 1)}
+                >
                   +
                 </button>
               </td>
               <td class="td">
                 <button
                   class="minusButton"
-                  onClick={() => setDT(DT > 0 ? DT - 1 : DT)}
+                  onClick={() => setDT(DT > 1 ? DT - 1 : DT)}
                 >
                   -
                 </button>
                 &nbsp;{DT}&nbsp;
-                <button class="plusButton" onClick={() => setDT(DT + 1)}>
+                <button
+                  class="plusButton"
+                  onClick={() => setDT(DT > 18 ? DT : DT + 1)}
+                >
                   +
                 </button>
               </td>
@@ -205,24 +281,30 @@ const FCFS = () => {
               <td class="td">
                 <button
                   class="minusButton"
-                  onClick={() => setEL(EL > 0 ? EL - 1 : EL)}
+                  onClick={() => setEL(EL > 1 ? EL - 1 : EL)}
                 >
                   -
                 </button>
                 &nbsp;{EL}&nbsp;
-                <button class="plusButton" onClick={() => setEL(EL + 1)}>
+                <button
+                  class="plusButton"
+                  onClick={() => setEL(EL > 18 ? EL : EL + 1)}
+                >
                   +
                 </button>
               </td>
               <td class="td">
                 <button
                   class="minusButton"
-                  onClick={() => setET(ET > 0 ? ET - 1 : ET)}
+                  onClick={() => setET(ET > 1 ? ET - 1 : ET)}
                 >
                   -
                 </button>
                 &nbsp;{ET}&nbsp;
-                <button class="plusButton" onClick={() => setET(ET + 1)}>
+                <button
+                  class="plusButton"
+                  onClick={() => setET(ET > 18 ? ET : ET + 1)}
+                >
                   +
                 </button>
               </td>
@@ -260,7 +342,7 @@ const FCFS = () => {
             </tr>
             <tr>
               <th class="thh">A</th>
-              <td class="td">{SUMA}</td>
+              <td class="td">&nbsp;</td>
               <td class="td">&nbsp;</td>
               <td class="td">&nbsp;</td>
               <td class="td">&nbsp;</td>

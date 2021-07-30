@@ -186,3 +186,7 @@
   margin: 0px;
   padding: 0px;
 }
+
+.dialog {
+  background-color: #282c34;
+}

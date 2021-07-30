@@ -1,25 +1,11 @@
 {
-  "files": {
-    "main.css": "/process-scheduler-simulator/static/css/main.dab28773.chunk.css",
-    "main.js": "/process-scheduler-simulator/static/js/main.f9000eb8.chunk.js",
-    "main.js.map": "/process-scheduler-simulator/static/js/main.f9000eb8.chunk.js.map",
-    "runtime-main.js": "/process-scheduler-simulator/static/js/runtime-main.80c3c448.js",
-    "runtime-main.js.map": "/process-scheduler-simulator/static/js/runtime-main.80c3c448.js.map",
-    "static/js/2.cdb234c7.chunk.js": "/process-scheduler-simulator/static/js/2.cdb234c7.chunk.js",
-    "static/js/2.cdb234c7.chunk.js.map": "/process-scheduler-simulator/static/js/2.cdb234c7.chunk.js.map",
-    "static/js/3.204e29a9.chunk.js": "/process-scheduler-simulator/static/js/3.204e29a9.chunk.js",
-    "static/js/3.204e29a9.chunk.js.map": "/process-scheduler-simulator/static/js/3.204e29a9.chunk.js.map",
-    "index.html": "/process-scheduler-simulator/index.html",
-    "static/css/main.dab28773.chunk.css.map": "/process-scheduler-simulator/static/css/main.dab28773.chunk.css.map",
-    "static/js/2.cdb234c7.chunk.js.LICENSE.txt": "/process-scheduler-simulator/static/js/2.cdb234c7.chunk.js.LICENSE.txt",
-    "static/media/epsc.1163ee64.png": "/process-scheduler-simulator/static/media/epsc.1163ee64.png",
-    "static/media/favicon.29bf6954.ico": "/process-scheduler-simulator/static/media/favicon.29bf6954.ico",
-    "static/media/uco.447057b6.png": "/process-scheduler-simulator/static/media/uco.447057b6.png"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.80c3c448.js",
-    "static/js/2.cdb234c7.chunk.js",
-    "static/css/main.dab28773.chunk.css",
-    "static/js/main.f9000eb8.chunk.js"
-  ]
+  "main.css": "static/css/main.048fb73c.css",
+  "main.css.map": "static/css/main.048fb73c.css.map",
+  "main.js": "static/js/main.fe05691f.js",
+  "main.js.map": "static/js/main.fe05691f.js.map",
+  "static/js/0.84830390.chunk.js": "static/js/0.84830390.chunk.js",
+  "static/js/0.84830390.chunk.js.map": "static/js/0.84830390.chunk.js.map",
+  "static/media/epsc.png": "static/media/epsc.126148c7.png",
+  "static/media/favicon.ico": "static/media/favicon.59a6f537.ico",
+  "static/media/uco.png": "static/media/uco.e21c6214.png"
 }

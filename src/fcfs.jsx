@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const FCFS = () => {
   useEffect(() => {
@@ -19,17 +20,30 @@ const FCFS = () => {
   return (
     <div className="App">
       <header className="App-header">
+        <Helmet>
+          <title>Process Planner Simulator</title>
+        </Helmet>
         <div id="banner">
           <div></div>
           <div class="inline-block">
             <div class="dropdown">
               <button class="dropbtn">FCFS</button>
               <div class="dropdown-content">
-                <p class="space"><Link to="/rr">RR</Link></p>
-                <p class="space"><Link to="/mpq">MPQ</Link></p>
-                <p class="space"><Link to="/fmpq">FMPQ</Link></p>
-                <p class="space"><Link to="/spn">SPN</Link></p>
-                <p class="space"><Link to="/srt">SRT</Link></p>
+                <p class="space">
+                  <Link to="/rr">RR</Link>
+                </p>
+                <p class="space">
+                  <Link to="/mpq">MPQ</Link>
+                </p>
+                <p class="space">
+                  <Link to="/fmpq">FMPQ</Link>
+                </p>
+                <p class="space">
+                  <Link to="/spn">SPN</Link>
+                </p>
+                <p class="space">
+                  <Link to="/srt">SRT</Link>
+                </p>
               </div>
             </div>
             <div class="inline-block">

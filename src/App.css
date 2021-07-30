@@ -161,28 +161,28 @@
 .td {
   border: 1px solid white;
 }
-.minusButton{
+.minusButton {
   background-color: #282c34;
   border: none;
   color: red;
   font-size: 25px;
   text-align: center;
 }
-.minusButton:hover{
-  color: rgb(165, 1, 1)
+.minusButton:hover {
+  color: rgb(165, 1, 1);
 }
-.plusButton{
+.plusButton {
   background-color: #282c34;
   border: none;
   color: #5bcc55;
   font-size: 25px;
   text-align: center;
 }
-.plusButton:hover{
+.plusButton:hover {
   color: #3e8e41;
 }
 
-.space{
+.space {
   margin: 0px;
   padding: 0px;
 }

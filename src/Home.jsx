@@ -1,15 +1,19 @@
-import './App.css';
-import React from 'react';
+import "./App.css";
+import React from "react";
 import logo from "./assets/favicon.ico";
 import uco from "./assets/uco.png";
 import epsc from "./assets/epsc.png";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 class Home extends React.Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
+          <Helmet>
+            <title>Process Planner Simulator</title>
+          </Helmet>
           <div id="banner">
             <div class="inline-block">
               <a href="https://www.uco.es/">
@@ -44,7 +48,6 @@ class Home extends React.Component {
       </div>
     );
   }
-
 }
 
 export default Home;

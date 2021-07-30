@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const SPN = () => {
   useEffect(() => {
@@ -18,16 +19,29 @@ const SPN = () => {
   return (
     <div className="App">
       <header className="App-header">
+        <Helmet>
+          <title>Process Planner Simulator</title>
+        </Helmet>
         <div id="banner">
           <div class="inline-block">
             <div class="dropdown">
               <button class="dropbtn">SPN</button>
               <div class="dropdown-content">
-                <p class="space"><Link to="/fcfs">FCFS</Link></p>
-              <p class="space"><Link to="/rr">RR</Link></p>
-                <p class="space"><Link to="/mpq">MPQ</Link></p>
-                <p class="space"><Link to="/fmpq">FMPQ</Link></p>
-                <p class="space"><Link to="/srt">SRT</Link></p>
+                <p class="space">
+                  <Link to="/fcfs">FCFS</Link>
+                </p>
+                <p class="space">
+                  <Link to="/rr">RR</Link>
+                </p>
+                <p class="space">
+                  <Link to="/mpq">MPQ</Link>
+                </p>
+                <p class="space">
+                  <Link to="/fmpq">FMPQ</Link>
+                </p>
+                <p class="space">
+                  <Link to="/srt">SRT</Link>
+                </p>
               </div>
             </div>
           </div>
@@ -56,8 +70,30 @@ const SPN = () => {
             </tr>
             <tr>
               <th class="th">A</th>
-              <td class="td"><button class="minusButton" onClick={() => setAL((AL>0) ? (AL - 1) : (AL))}>-</button>&nbsp;{AL}&nbsp;<button class="plusButton" onClick={() => setAL(AL + 1)}>+</button></td>
-              <td class="td"><button class="minusButton" onClick={() => setAT((AT>0) ? (AT - 1) : (AT))}>-</button>&nbsp;{AT}&nbsp;<button class="plusButton" onClick={() => setAT(AT + 1)}>+</button></td>
+              <td class="td">
+                <button
+                  class="minusButton"
+                  onClick={() => setAL(AL > 0 ? AL - 1 : AL)}
+                >
+                  -
+                </button>
+                &nbsp;{AL}&nbsp;
+                <button class="plusButton" onClick={() => setAL(AL + 1)}>
+                  +
+                </button>
+              </td>
+              <td class="td">
+                <button
+                  class="minusButton"
+                  onClick={() => setAT(AT > 0 ? AT - 1 : AT)}
+                >
+                  -
+                </button>
+                &nbsp;{AT}&nbsp;
+                <button class="plusButton" onClick={() => setAT(AT + 1)}>
+                  +
+                </button>
+              </td>
               <td class="td">&nbsp;</td>
               <td class="td">&nbsp;</td>
               <td class="td">&nbsp;</td>
@@ -65,8 +101,30 @@ const SPN = () => {
             </tr>
             <tr>
               <th class="th">B</th>
-              <td class="td"><button class="minusButton" onClick={() => setBL((BL>0) ? (BL - 1) : (BL))}>-</button>&nbsp;{BL}&nbsp;<button class="plusButton" onClick={() => setBL(BL + 1)}>+</button></td>
-              <td class="td"><button class="minusButton" onClick={() => setBT((BT>0) ? (BT - 1) : (BT))}>-</button>&nbsp;{BT}&nbsp;<button class="plusButton" onClick={() => setBT(BT + 1)}>+</button></td>
+              <td class="td">
+                <button
+                  class="minusButton"
+                  onClick={() => setBL(BL > 0 ? BL - 1 : BL)}
+                >
+                  -
+                </button>
+                &nbsp;{BL}&nbsp;
+                <button class="plusButton" onClick={() => setBL(BL + 1)}>
+                  +
+                </button>
+              </td>
+              <td class="td">
+                <button
+                  class="minusButton"
+                  onClick={() => setBT(BT > 0 ? BT - 1 : BT)}
+                >
+                  -
+                </button>
+                &nbsp;{BT}&nbsp;
+                <button class="plusButton" onClick={() => setBT(BT + 1)}>
+                  +
+                </button>
+              </td>
               <td class="td">&nbsp;</td>
               <td class="td">&nbsp;</td>
               <td class="td">&nbsp;</td>
@@ -74,8 +132,30 @@ const SPN = () => {
             </tr>
             <tr>
               <th class="th">C</th>
-              <td class="td"><button class="minusButton" onClick={() => setCL((CL>0) ? (CL - 1) : (CL))}>-</button>&nbsp;{CL}&nbsp;<button class="plusButton" onClick={() => setCL(CL + 1)}>+</button></td>
-              <td class="td"><button class="minusButton" onClick={() => setCT((CT>0) ? (CT - 1) : (CT))}>-</button>&nbsp;{CT}&nbsp;<button class="plusButton" onClick={() => setCT(CT + 1)}>+</button></td>
+              <td class="td">
+                <button
+                  class="minusButton"
+                  onClick={() => setCL(CL > 0 ? CL - 1 : CL)}
+                >
+                  -
+                </button>
+                &nbsp;{CL}&nbsp;
+                <button class="plusButton" onClick={() => setCL(CL + 1)}>
+                  +
+                </button>
+              </td>
+              <td class="td">
+                <button
+                  class="minusButton"
+                  onClick={() => setCT(CT > 0 ? CT - 1 : CT)}
+                >
+                  -
+                </button>
+                &nbsp;{CT}&nbsp;
+                <button class="plusButton" onClick={() => setCT(CT + 1)}>
+                  +
+                </button>
+              </td>
               <td class="td">&nbsp;</td>
               <td class="td">&nbsp;</td>
               <td class="td">&nbsp;</td>
@@ -83,8 +163,30 @@ const SPN = () => {
             </tr>
             <tr>
               <th class="th">D</th>
-              <td class="td"><button class="minusButton" onClick={() => setDL((DL>0) ? (DL - 1) : (DL))}>-</button>&nbsp;{DL}&nbsp;<button class="plusButton" onClick={() => setDL(DL + 1)}>+</button></td>
-              <td class="td"><button class="minusButton" onClick={() => setDT((DT>0) ? (DT - 1) : (DT))}>-</button>&nbsp;{DT}&nbsp;<button class="plusButton" onClick={() => setDT(DT + 1)}>+</button></td>
+              <td class="td">
+                <button
+                  class="minusButton"
+                  onClick={() => setDL(DL > 0 ? DL - 1 : DL)}
+                >
+                  -
+                </button>
+                &nbsp;{DL}&nbsp;
+                <button class="plusButton" onClick={() => setDL(DL + 1)}>
+                  +
+                </button>
+              </td>
+              <td class="td">
+                <button
+                  class="minusButton"
+                  onClick={() => setDT(DT > 0 ? DT - 1 : DT)}
+                >
+                  -
+                </button>
+                &nbsp;{DT}&nbsp;
+                <button class="plusButton" onClick={() => setDT(DT + 1)}>
+                  +
+                </button>
+              </td>
               <td class="td">&nbsp;</td>
               <td class="td">&nbsp;</td>
               <td class="td">&nbsp;</td>
@@ -92,8 +194,30 @@ const SPN = () => {
             </tr>
             <tr>
               <th class="th">E</th>
-              <td class="td"><button class="minusButton" onClick={() => setEL((EL>0) ? (EL - 1) : (EL))}>-</button>&nbsp;{EL}&nbsp;<button class="plusButton" onClick={() => setEL(EL + 1)}>+</button></td>
-              <td class="td"><button class="minusButton" onClick={() => setET((ET>0) ? (ET - 1) : (ET))}>-</button>&nbsp;{ET}&nbsp;<button class="plusButton" onClick={() => setET(ET + 1)}>+</button></td>
+              <td class="td">
+                <button
+                  class="minusButton"
+                  onClick={() => setEL(EL > 0 ? EL - 1 : EL)}
+                >
+                  -
+                </button>
+                &nbsp;{EL}&nbsp;
+                <button class="plusButton" onClick={() => setEL(EL + 1)}>
+                  +
+                </button>
+              </td>
+              <td class="td">
+                <button
+                  class="minusButton"
+                  onClick={() => setET(ET > 0 ? ET - 1 : ET)}
+                >
+                  -
+                </button>
+                &nbsp;{ET}&nbsp;
+                <button class="plusButton" onClick={() => setET(ET + 1)}>
+                  +
+                </button>
+              </td>
               <td class="td">&nbsp;</td>
               <td class="td">&nbsp;</td>
               <td class="td">&nbsp;</td>

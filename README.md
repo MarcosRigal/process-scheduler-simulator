@@ -1,6 +1,6 @@
 # Process Scheduler Simulator
 
-![App](src/assets/app.png)
+![App](src/assets/app.png) 
 
 This is a Process Scheduler Simulator made with React for the Operating Systems subject at Computer Science degree at the University of Cordoba.
 
